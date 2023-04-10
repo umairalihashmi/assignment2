@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+</head>
+<body>
+    <header>
+        <center><H1>Application form</H1></center>
+    </header>
+    <main>
+        <!--These sections can be formed as ordered list but sticking to form format lecture-->
+        <!--minimal use of css for decoration as it is an assignment for html not css, i can add IF required.-->
+
+        <section>
+            <form action="none">
+                
+                <div>
+                    <h2>A.General Questions</h2>
+                    <label for="i_name">Proposed Insured's Name:</label>
+                    <input  id = "i_name" type="text" maxlength="52" pattern="[A-Z]*" size="84">
+                    <br> <br>
+    
+                    <label for="dob">Birth Date:</label>
+                    <input type="date" id="dob">
+                    <label >Gender: </label>
+                    <input type="radio" name="gender" >Male
+                    <input type="radio" name="gender" >Female
+                    <!--Could not find a solution to check only 1 of given checkbox without javascript so using radio instead-->
+                    <br><br>
+                    <label for="add">Address: </label>
+                    <input id="add" type="text" size="100" placeholder="House No. 123, Block XYZ">
+                    <br><br>
+                    <label for="phone">Phone Number: </label>
+                    <input id="phone" type="number" placeholder="03XX-XXXXXXX">
+                    <label for="email">Email Address: </label>
+                    <input id="email" type="email" size="53" placeholder="sample@gmail.com">
+                    <br><br>
+                    <label for="ID">ID Number: </label>
+                    <input id="ID" type="number">
+                    <label for="ss">Social Security Number: </label>
+                    <input id="ss" type="number">
+                    <br><br>
+                    <label >Status: </label>
+                    <input type="radio" name="status">Single
+                    <input type="radio" name="status">Married
+                    <input type="radio" name="status">Divorced
+                    <input type="radio" name="status">Others
+                    <br><br>
+                    <label for="occ">Occupation: </label>
+                    <input id="occ" type="text" size="50" >
+                    <label >Are you a Retiree?</label>
+                    <input type="radio" name="retiree">Yes
+                    <input type="radio" name="retiree">No
+                </div>
+
+                <div>
+                    <h2>B.Type of Health Coverage</h2>
+                    <table border="1">
+                        <tr>
+                            <td>
+                                <label>Employee:</label>
+                                <input type="radio" name="emp">Yes
+                                <input type="radio" name="emp">No
+                                <br> <label for="emp_plan">Plan Choice:</label>
+                                <input id="emp_plan" type="text" size="10" >
+                            </td>
+                            <td>
+                                <label>Spouse:</label>
+                                <input type="radio" name="emp">Yes
+                                <input type="radio" name="emp">No
+                                <br> <label for="sp_plan">Plan Choice:</label>
+                                <input id="sp_plan" type="text" size="10" >
+                            </td>
+                            <td>
+                                <label>Children:</label>
+                                <input type="radio" name="emp">Yes
+                                <input type="radio" name="emp">No
+                                <br> <label for="ch_plan">Plan Choice:</label>
+                                <input id="ch_plan" type="text" size="10" >
+                            </td>
+                        </tr>
+                    </table>
+                    <br><br>
+
+                    <label for="insurance_table">Complete if Spouse/Children are Proposed for Insurance:</label>
+                    <br><br>
+
+
+                    <table id="insurance_table" border = '1'>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>SSN No.</th>
+                                <th>Relationship to Proposed insured</th>
+                                <th>Birth Date</th>
+                                <th>Age</th>
+                                <th>Sex</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!--forced to use inline css because of no html attribute to set height of a tabledata-->
+                            <tr>
+                                <td style="height: 15px;" ></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td style="height: 15px;"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td style="height: 15px;"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td style="height: 15px;"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+
+                </div>
+
+                <div>
+                    <h2>C.The Policy</h2>
+                    <label for="unit">Units:</label>
+                    <input type="number" id="unit">
+                    <label for="premium">Annual Premium: </label>
+                    <input type="number" id="premium">
+                    <br><br>
+                    <label>Payment Mode: </label>
+                    <input type="radio" name="P_mode">Annual
+                    <input type="radio" name="P_mode">Semi-Annual
+                    <input type="radio" name="P_mode">Monthly PAT(complete PAT card)
+                    <br><br>
+                    <label for="cashapplication">Cash With Application: $</label>
+                    <input id="cashapplication" type="text" size="85">
+                    <br><cashapp
+                    <label for="plannedpremium">Planned modal premium: $</label>
+                    <input id="plannedpremium" type="text" size="83">
+
+
+                </div>
+
+                <div>
+                    <dl>
+                        <dt>
+                            Terms & Conditions
+                        </dt>
+                        <dd>
+                            Improvement should be measured regularly and assessed in order for you to know what's benificial and what's not. This will help you set new targets.
+                        </dd>
+                    </dl>
+                    <label for="sign">Signature: </label>
+                    <input type="text" id="sign">
+                    <br>
+                    <label for="dt">Date: </label>
+                    <input type="text"id="dt" size="24">
+
+                </div>
+
+
+
+
+
+
+
+
+            </form>
+        </section>
+    </main>
+</body>
+</html>
